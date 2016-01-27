@@ -14,6 +14,6 @@ set(SOURCE_FILES
     main.cpp)
 
 # lib
-add_executable(bin/syscall-sensor ${SOURCE_FILES})
+add_executable(bin/syscall-sensors ${SOURCE_FILES})
 #add_executable(highperformancelinuxsensors ${SOURCE_FILES})
 
