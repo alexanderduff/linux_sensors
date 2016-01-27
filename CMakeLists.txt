@@ -15,6 +15,6 @@ set(SOURCE_FILES
 
 # lib
 ADD_EXECUTABLE(syscall-sensors ${SOURCE_FILES})
-INSTALL(TARGETS syscall-sensors RUNTIME DESTINATION bin)
+INSTALL(TARGETS syscall-sensors RUNTIME DESTINATION /usr/bin/)
 #add_executable(highperformancelinuxsensors ${SOURCE_FILES})
 
