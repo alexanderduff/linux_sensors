@@ -14,6 +14,7 @@ set(SOURCE_FILES
     main.cpp)
 
 # lib
-add_executable(syscall-sensors ${SOURCE_FILES})
+ADD_EXECUTABLE(syscall-sensors ${SOURCE_FILES})
+INSTALL(TARGETS syscall-sensors RUNTIME DESTINATION bin)
 #add_executable(highperformancelinuxsensors ${SOURCE_FILES})
 
