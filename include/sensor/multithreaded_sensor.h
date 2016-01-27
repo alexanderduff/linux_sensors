@@ -59,7 +59,7 @@ public:
 		status << setw(len) << left << "Send Events " << "= " << std::setprecision(2) << std::fixed << setw(len_events) << _sender_watch.now() << " events/sec\n";
 		status << setw(len) << left << "Stream Queue size " << "= " << setw(len_events) << _stream_queue.size() << "\n";
 		status << setw(len) << left << "Result Queue size " << "= " << setw(len_events) << _result_queue.size() << "\n" << "\n";
-		std::cout<<status<<"\n";
+		std::cout<<status.str()<<"\n";
 		return status.str();
 	}
 
