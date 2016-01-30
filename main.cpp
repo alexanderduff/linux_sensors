@@ -12,7 +12,8 @@
 #include "sensor/sys_record.h"
 
 //typedef SysRecord Record ;
-typedef SyscallsParams Record;
+//typedef SyscallsParams Record;
+typedef SysParamRecord Record;
 
 #include "utils/linux_daemon.h"
 
