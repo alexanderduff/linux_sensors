@@ -11,7 +11,9 @@
 #include "stream/socket_stream.h"
 #include "sensor/sys_record.h"
 
-typedef SysRecord Record ;
+//typedef SysRecord Record ;
+typedef SyscallsParams Record;
+
 #include "utils/linux_daemon.h"
 
 template<typename T>
