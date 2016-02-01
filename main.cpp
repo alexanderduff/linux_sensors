@@ -11,9 +11,9 @@
 #include "stream/socket_stream.h"
 #include "sensor/sys_record.h"
 
-//typedef SysRecord Record ;
+typedef SysRecord Record ;
 //typedef SyscallsParams Record;
-typedef SysParamRecord Record;
+//typedef SysParamRecord Record;
 
 #include "utils/linux_daemon.h"
 
