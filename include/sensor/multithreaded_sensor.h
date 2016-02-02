@@ -19,8 +19,8 @@
 #include"utils/utils.h"
 #include<signal.h>
 #include <fstream>
-#include "trace/syscall_params.h"
-//#include "trace/syscalls.h"
+//#include "trace/syscall_params.h"
+#include "trace/syscalls.h"
 #include "stream/file_aggr_stream.h"
 
 const int READ_BUFFER_SIZE = 1024;
@@ -40,8 +40,8 @@ void disable_seg_pipe(){
 template<class T>
 class multithreaded_sensor : public BaseSensor<T> {
 
-	typedef SyscallsParams<T> Tracer;
-//	typedef Syscalls<T> Tracer;
+//	typedef SyscallsParams<T> Tracer;
+	typedef Syscalls<T> Tracer;
 	typedef message_queue<EventsBulk*> _in_type;
 	typedef message_queue<std::vector<T>*> _out_type;
 
