@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.1)
 project(highperformancelinuxsensors)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -pthread")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 project(highperformancelinuxsensors)
 
@@ -14,7 +14,8 @@ set(SOURCE_FILES
     main.cpp)
 
 # lib
+FIND_PACKAGE(Threads)
 ADD_EXECUTABLE(syscall-sensors ${SOURCE_FILES})
+TARGET_LINK_LIBRARIES(syscall-sensors ${CMAKE_THREAD_LIBS_INIT})
 INSTALL(TARGETS syscall-sensors RUNTIME DESTINATION /usr/bin/)
 #add_executable(highperformancelinuxsensors ${SOURCE_FILES})
-
